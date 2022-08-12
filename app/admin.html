@@ -1,0 +1,415 @@
+---
+title: admin
+layout: ./app/layout.ejs
+engine: ejs
+current: admin
+---
+
+<div class="px-32">
+  <div class="d-flex justify-content-between">
+    <div class="header-item d-flex m-4 align-items-center ms-0">
+      <h4 class="header-text fw-bold mb-0 me-5">Admin</h4>
+      <a href="#" class="d-flex" data-bs-toggle="modal" data-bs-target="#exampleModal2">
+        <span class="material-symbols-outlined text-success">add</span>
+        <p class="fw-bold">Add New Admin</p>
+      </a>
+    </div>
+    <div class="header-icon d-flex align-items-center">
+      <a href="#">
+        <span class="material-symbols-outlined fw-bold">search</span>
+      </a>
+      <a href="">
+        <span class="material-symbols-outlined ms-4 fw-bold">notifications_active</span>
+      </a>
+    </div>
+  </div>
+  <table class="table">
+    <thead>
+      <tr>
+        <th scope="col">ID</th>
+        <th scope="col">Name</th>
+        <th scope="col">Email</th>
+        <th scope="col">Verified</th>
+        <th scope="col"></th>
+      </tr>
+    </thead>
+    <tbody class="table-group-divider">
+      <tr>
+        <th scope="row">#1</th>
+        <td>Emir Wicks</td>
+        <td>emir.wicks@mail.com</td>
+        <td>Yes</td>
+        <td class="text-end">
+          <a href="#" data-bs-toggle="modal" data-bs-target="#exampleModal3">
+            <span class="material-symbols-outlined ">visibility</span>
+          </a>
+          <a href="#" data-bs-toggle="modal" data-bs-target="#exampleModal">
+            <span class="material-symbols-outlined ms-4 ">edit</span>
+          </a>
+          
+        </td>
+      </tr>
+      <tr>
+        <th scope="row">#2</th>
+        <td>Zaina Goldsmith</td>
+        <td>zaina.goldsmith@mail.com</td>
+        <td>Yes</td>
+        <td class="text-end">
+          <a href="#">
+            <span class="material-symbols-outlined ">visibility</span>
+          </a>
+          <a href="#">
+            <span class="material-symbols-outlined ms-4 ">edit</span>
+          </a>
+        </td>
+      </tr>
+      <tr>
+        <th scope="row">#3</th>
+        <td>Mahima Lopez</td>
+        <td>@mahima.lopez@mail.com</td>
+        <td>Yes</td>
+        <td class="text-end">
+          <a href="#">
+            <span class="material-symbols-outlined ">visibility</span>
+          </a>
+          <a href="#">
+            <span class="material-symbols-outlined ms-4 ">edit</span>
+          </a>
+        </td>
+      </tr>
+      <tr>
+        <th scope="row">#4</th>
+        <td>Pharrell Murray</td>
+        <td>pharrell.murray@mail.com</td>
+        <td>Yes</td>
+        <td class="text-end">
+          <a href="#">
+            <span class="material-symbols-outlined ">visibility</span>
+          </a>
+          <a href="#">
+            <span class="material-symbols-outlined ms-4 ">edit</span>
+          </a>
+        </td>
+      </tr>
+      <tr>
+        <th scope="row">#5</th>
+        <td>Annika Mcbride</td>
+        <td>annika.mcbride@mail.com</td>
+        <td>Yes</td>
+        <td class="text-end">
+          <a href="#">
+            <span class="material-symbols-outlined ">visibility</span>
+          </a>
+          <a href="#">
+            <span class="material-symbols-outlined ms-4 ">edit</span>
+          </a>
+        </td>
+      </tr>
+      <tr>
+        <th scope="row">#6</th>
+        <td>Fatimah Clark</td>
+        <td>fatimah.clark@mail.com</td>
+        <td>Yes</td>
+        <td class="text-end">
+          <a href="#">
+            <span class="material-symbols-outlined ">visibility</span>
+          </a>
+          <a href="#">
+            <span class="material-symbols-outlined ms-4 ">edit</span>
+          </a>
+        </td>
+      </tr>
+      <tr>
+        <th scope="row">#7</th>
+        <td>Klaudia Rhodes</td>
+        <td>klaudia.rhodes@mail.com</td>
+        <td>Yes</td>
+        <td class="text-end">
+          <a href="#">
+            <span class="material-symbols-outlined ">visibility</span>
+          </a>
+          <a href="#">
+            <span class="material-symbols-outlined ms-4 ">edit</span>
+          </a>
+        </td>
+      </tr>
+      <tr>
+        <th scope="row">#8</th>
+        <td>Tillie Lucero</td>
+        <td>tillie.lucero@mail.com</td>
+        <td>Yes</td>
+        <td class="text-end">
+          <a href="#">
+            <span class="material-symbols-outlined ">visibility</span>
+          </a>
+          <a href="#">
+            <span class="material-symbols-outlined ms-4 ">edit</span>
+          </a>
+        </td>
+      </tr>
+      <tr>
+        <th scope="row">#9</th>
+        <td>Sabrina Stephenson</td>
+        <td>sabrina.stephenson@mail.com</td>
+        <td>Yes</td>
+        <td class="text-end">
+          <a href="#">
+            <span class="material-symbols-outlined ">visibility</span>
+          </a>
+          <a href="#">
+            <span class="material-symbols-outlined ms-4 ">edit</span>
+          </a>
+        </td>
+      </tr>
+      <tr>
+        <th scope="row">#10</th>
+        <td>Annie Smith</td>
+        <td>annie.smith@mail.com</td>
+        <td>Yes</td>
+        <td class="text-end">
+          <a href="#">
+            <span class="material-symbols-outlined ">visibility</span>
+          </a>
+          <a href="#">
+            <span class="material-symbols-outlined ms-4 ">edit</span>
+          </a>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  <nav aria-label="..." class="d-flex justify-content-end">
+  <ul class="pagination">
+    <li class="page-item disabled">
+      <a class="page-link">
+        <span class="material-symbols-outlined">chevron_left</span>
+      </a>
+    </li>
+    <li class="page-item active"><a class="page-link" href="#">1</a></li>
+    <li class="page-item" aria-current="page">
+      <a class="page-link" href="#">2</a>
+    </li>
+    <li class="page-item"><a class="page-link" href="#">3</a></li>
+    <li class="page-item">
+      <a class="page-link" href="#">
+        <span class="material-symbols-outlined">chevron_right</span>
+      </a>
+    </li>
+  </ul>
+</nav>
+</div>
+
+
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Edit Admin</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <h5 class="fw-bold mb-3">Account</h5>
+        <form>
+          <div class="mb-3 editAdmin">
+            <label class="form-label">Name</label>
+            <input type="text" class="form-control p-3" value="Emir Wicks">
+          </div>
+          <div class="mb-3 editAdmin">
+            <label for="exampleInputEmail1" class="form-label">Email</label>
+            <input type="email" class="form-control p-3" id="exampleInputEmail1" value="emir.wicks@mail.com">
+          </div>
+          <div class="my-4 secondary-line"></div>
+          <h5 class="fw-bold mb-3">Verification</h5>
+          <div class="d-flex justify-content-between">
+            <div class="form-check radiusNone">
+              <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+              <label class="form-check-label" for="flexCheckChecked">
+                Verified
+              </label>
+            </div>
+            <p class="fs-14">2020/4/12</p>
+          </div>
+          <button type="button" class="btn btn-outline-secondary w-100 mb-4 mt-3 p-3" disabled>Send Verification Mail</button>
+        </form>
+        <h5 class="fw-bold mb-3">Access Level</h5>
+        <select class="form-select form-select-lg mb-3 border border-dark w-100" aria-label=".form-select-lg example">
+          <option selected>Admin</option>
+          <option value="Admin">Admin</option>
+          <option value="Admin">Admin</option>
+          <option value="Admin">Admin</option>
+        </select>
+
+        <div class="my-4 secondary-line"></div>
+        <h5 class="fw-bold mb-3">Custom Access</h5>
+
+        <div class="form-check mb-3">
+          <input class="form-check-input border-dark" type="checkbox" value="" id="flexCheckChecked">
+          <label class="form-check-label" for="flexCheckChecked">
+            Lecture
+          </label>
+        </div>
+        <div class="form-check mb-3">
+          <input class="form-check-input border-dark" type="checkbox" value="" id="flexCheckChecked2">
+          <label class="form-check-label" for="flexCheckChecked2">
+             Coupon
+          </label>
+        </div>
+        <div class="form-check mb-3">
+          <input class="form-check-input border-dark" type="checkbox" value="" id="flexCheckChecked3">
+          <label class="form-check-label" for="flexCheckChecked3">
+            Message
+          </label>
+        </div>
+        <div class="form-check mb-3">
+          <input class="form-check-input border-dark" type="checkbox" value="" id="flexCheckChecked4">
+          <label class="form-check-label" for="flexCheckChecked4">
+            Setting
+          </label>
+        </div>
+        <div class="form-check mb-3">
+          <input class="form-check-input border-dark" type="checkbox" value="" id="flexCheckChecked5">
+          <label class="form-check-label" for="flexCheckChecked5">
+           Task Menu
+          </label>
+        </div>
+
+        <div class="my-4 secondary-line"></div>
+        <h5 class="fw-bold mb-3">Custom Access</h5>
+
+        <div class="d-flex mb-3">
+          <span class="material-symbols-outlined text-danger me-2">warning</span>
+         <p class="text-danger">This cannot be undone!</p>
+        </div>
+        <button type="button" class="btn btn-outline-danger w-100 p-3">Deactivate This Account</button>
+
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-outline-success py-2 px-32" data-bs-dismiss="modal">Cancel</button>
+        <button type="button" class="btn btn-success ms-3 py-2 px-32">Update</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal2 -->
+<div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModal2Label" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title fw-bold" id="exampleModal2Label">New Admin</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <form>
+          <div class="mb-3">
+            <label class="form-label">Name</label>
+            <input type="text" class="form-control p-3 border-dark" >
+          </div>
+          <div class="mb-3">
+            <label for="exampleInputEmail1" class="form-label">Email</label>
+            <input type="email" class="form-control p-3 border-dark" id="exampleInputEmail1">
+          </div>
+          <div class="my-4 secondary-line"></div>
+          <h5 class="fw-bold mb-3">Verification</h5>
+          <div class="d-flex">
+            <span class="material-symbols-outlined me-3 text-danger">warning</span>
+            <label class="form-check-label fw-bold" for="flexCheckChecked">
+              Unverified
+            </label>
+          </div>
+          <button type="button" class="btn btn-outline-secondary w-100 mb-4 mt-3 p-3 text-success fw-bold" disabled>Send Verification Mail</button>
+        </form>
+        <h5 class="fw-bold mb-3">Access Level</h5>
+        <select class="form-select p-3 mb-3 border border-dark w-100" aria-label=".form-select-lg example">
+          <option selected>-Choose access level-</option>
+          <option value="Admin">Admin</option>
+          <option value="Admin">Admin</option>
+          <option value="Admin">Admin</option>
+        </select>
+
+        <div class="my-4 secondary-line"></div>
+        <h5 class="fw-bold mb-3">Custom Access</h5>
+
+        <div class="form-check mb-3">
+          <input class="form-check-input border-dark" type="checkbox" value="" id="flexCheckChecked">
+          <label class="form-check-label" for="flexCheckChecked">
+            Lecture
+          </label>
+        </div>
+        <div class="form-check mb-3">
+          <input class="form-check-input border-dark" type="checkbox" value="" id="flexCheckChecked2">
+          <label class="form-check-label" for="flexCheckChecked2">
+             Coupon
+          </label>
+        </div>
+        <div class="form-check mb-3">
+          <input class="form-check-input border-dark" type="checkbox" value="" id="flexCheckChecked3">
+          <label class="form-check-label" for="flexCheckChecked3">
+            Message
+          </label>
+        </div>
+        <div class="form-check mb-3">
+          <input class="form-check-input border-dark" type="checkbox" value="" id="flexCheckChecked4">
+          <label class="form-check-label" for="flexCheckChecked4">
+            Setting
+          </label>
+        </div>
+        <div class="form-check mb-3">
+          <input class="form-check-input border-dark" type="checkbox" value="" id="flexCheckChecked5">
+          <label class="form-check-label" for="flexCheckChecked5">
+           Task Menu
+          </label>
+        </div>
+
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-outline-success py-2 px-32" data-bs-dismiss="modal">Cancel</button>
+        <button type="button" class="btn btn-success ms-3 py-2 px-32">Add</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal3 -->
+<div class="modal fade" id="exampleModal3" tabindex="-1" aria-labelledby="exampleModal3Label" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+
+        <div class="modal-header information border-0">
+          <div class="d-flex">
+          <img src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/week5/emir.jpeg" alt="Emir Wick">
+          <div class="information-text ms-4">
+            <p>#1</p>
+            <p>Admin</p>
+            <h5>Emir Wicks</h5>
+            <p>emir.wicks@mail.com</p>
+            <a class="btn btn-light">
+                Verified
+              </a>
+          </div>
+          </div>
+          <div class="d-flex flex-column justify-content-between information-icon">
+            <button type="button" class="btn-close mx-auto" data-bs-dismiss="modal" aria-label="Close"></button>
+            <button class="btn link-success" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+              <span class="material-icons expand_less">
+                expand_less
+              </span>
+              <span class="material-icons expand_more">
+                expand_more
+              </span>
+            </button>
+          </div>
+        </div>
+        
+        <div class="collapse" id="collapseExample">
+          <div class="card-body d-flex justify-content-end m-3 mt-0">
+            <button type="button" class="btn btn-outline-danger py-2 px-32" data-bs-dismiss="modal">Deactivate</button>
+        <button type="button" class="btn btn-success ms-3 py-2 px-32">Edit</button>
+          </div>
+        </div>
+
+
+    </div>
+  </div>
+</div>

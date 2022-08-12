@@ -1,0 +1,290 @@
+---
+title: index
+layout: ./app/layout.ejs
+engine: ejs
+current: index
+---
+
+<div class="px-32">
+  <div class="d-flex justify-content-between">
+    <div class="header-item d-flex m-4 align-items-center ms-0">
+      <h4 class="header-text fw-bold mb-0">Assignment</h4>
+      <select class="form-select fw-bold ms-5" aria-label="Default select example">
+        <option selected>All Courses</option>
+        <option value="1">One</option>
+        <option value="2">Two</option>
+        <option value="3">Three</option>
+      </select>
+    </div>
+    <div class="header-icon d-flex align-items-center">
+      <a href="#">
+        <span class="material-symbols-outlined fw-bold">search</span>
+      </a>
+      <a href="">
+        <span class="material-symbols-outlined ms-4 fw-bold">notifications_active</span>
+      </a>
+    </div>
+  </div>
+  <div class="d-flex justify-content-between align-items-center info">
+    <select class="form-select fw-bold" aria-label="Default select example">
+      <option selected>All (4)</option>
+      <option value="1">One</option>
+      <option value="2">Two</option>
+      <option value="3">Three</option>
+    </select>
+    <div class="comment">
+      <p class="m-0 text-secondary fs-12">2 comments</p>
+    </div>
+  </div>
+  <div class="content">
+    <div class="row">
+      <div class="col-4">
+        <div class="list-group" id="list-tab" role="tablist">
+          <a class="list-group-item list-group-item-action active" id="list-home-list" data-bs-toggle="list" href="#list-home" role="tab" aria-controls="list-home">
+            <div class="d-flex justify-content-between">
+              <p class="fs-12">Chapter Assignment 2</p>
+              <p class="fs-12">4 hrs ago</p>
+            </div>
+            <div class="d-flex justify-content-between">
+              <p class="fw-bold">Please check this file…</p>
+              <p class="fs-12 text-secondary">Emily Wang</p>
+            </div>
+          </a>
+          <a class="list-group-item list-group-item-action" id="list-profile-list" data-bs-toggle="list" href="#list-profile" role="tab" aria-controls="list-profile">
+            <div class="d-flex justify-content-between">
+              <p class="fs-12">Chapter Assignment 1</p>
+              <p class="fs-12">12 hrs ago</p>
+            </div>
+            <div class="d-flex justify-content-between">
+              <p class="fw-bold">My Homework</p>
+              <p class="fs-12 text-secondary">David Xu</p>
+            </div>
+          </a>
+          <a class="list-group-item list-group-item-action" id="list-messages-list" data-bs-toggle="list" href="#list-messages" role="tab" aria-controls="list-messages">
+            <div class="d-flex justify-content-between">
+              <p class="fs-12">Final Assignment</p>
+              <p class="fs-12">18 hrs ago</p>
+            </div>
+            <div class="d-flex justify-content-between">
+              <p class="fw-bold">Have a problem with this…</p>
+              <p class="fs-12 text-secondary">Tony Wei</p>
+            </div>
+          </a>
+          <a class="list-group-item list-group-item-action" id="list-settings-list" data-bs-toggle="list" href="#list-settings" role="tab" aria-controls="list-settings">
+            <div class="d-flex justify-content-between">
+              <p class="fs-12">Final Assignment</p>
+              <p class="fs-12">19 hrs ago</p>
+            </div>
+            <div class="d-flex justify-content-between">
+              <p class="fw-bold">Did I do it right?</p>
+              <p class="fs-12 text-secondary">Christina Lin</p>
+            </div>
+          </a>
+        </div>
+      </div>
+      <div class="col-8">
+        <div class="tab-content" id="nav-tabContent">
+          <div class="tab-pane fade show active" id="list-home" role="tabpanel" aria-labelledby="list-home-list">
+            <div class="card">
+              <div class="card-header d-flex justify-content-between align-items-center">
+                <div>
+                  <p class="fs-12">Chapter Assignment 2 / HTML&CSS</p>
+                  <p class="fw-bold">Please check this file for me, thanks!</p>
+                </div>
+                <span class="material-symbols-outlined fw-bold">more_vert</span>
+              </div>
+              <div class="card-body pe-32">
+                <div class="d-flex align-items-center personal">
+                  <img src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/week5/emilywang.jpeg" alt="emilywang" class=" rounded-circle me-3">
+                  <div>
+                    <p>Emily Wang</p>
+                    <p class="fs-14 text-secondary fs-12">10:38 AM (4 hours ago)</p>
+                  </div>
+                </div>
+                <div class="ms-56">
+                  <p class="card-text fs-14 my-3">Hi Teacher, the attached file is my homework of chapter 2. And here comes a question: Why in the following code the height of the <span class="font-mono text-success">div</span> is bigger than the height of the <span class="font-mono text-success">img</span> ? There is a gap below the image, but it doesn’t seems to be a padding/margin. <br> What is the gap or extra space below image?</p>
+                  <a href="#" class="btn btn-light border" download="HW-2-David.zip">HW-2-David.zip</a>
+                </div>
+                <div class="secondary-line my-3 ms-56"></div>
+                <div class="edit-before">
+                  <div class="d-flex align-items-center personal justify-content-between">
+                    <div class="d-flex">
+                      <img src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/week5/andychen.jpeg" alt="andychen" class=" rounded-circle me-3">
+                      <div>
+                        <p>Andy Chen (You)</p>
+                          <p class="email-text text-secondary fs-12">13:24 AM (1 hours ago)</p>
+                      </div>
+                    </div>
+                    <div>
+                      <span class="material-symbols-outlined">grade</span>
+                      <span class="material-symbols-outlined ms-4">edit</span>
+                    </div>
+                  </div>
+                  <div class="ms-56">
+                    <p class="card-text fs-14 my-3">Hi David, by default, an image is rendered inline, like a letter so it sits on the same line that a, b, c and d sit on. There is space below that line for the descenders you find on letters like g, j, p and q. <br><br> You can: <br><br>　• adjust the <span class="font-mono text-success">vertical-align</span> of the image to position it elsewhere (e.g. the <span class="font-mono text-success">middle</span>  ) or <br>　• change the <span class="font-mono text-success">display</span>  so it isn’t inline.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="editor-wrap">
+                <div id="editor" class="editor">Reply an answer…</div>
+              </div>
+            </div>
+          </div>
+          <div class="tab-pane fade" id="list-profile" role="tabpanel" aria-labelledby="list-profile-list">
+            <div class="card">
+              <div class="card-header d-flex justify-content-between align-items-center">
+                <div>
+                  <p class="fs-12">Chapter Assignment 2 / HTML&CSS</p>
+                  <p class="fw-bold">Please check this file for me, thanks!</p>
+                </div>
+                <span class="material-symbols-outlined fw-bold">more_vert</span>
+              </div>
+              <div class="card-body pe-32">
+                <div class="d-flex align-items-center personal">
+                  <img src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/week5/emilywang.jpeg" alt="emilywang" class=" rounded-circle me-3">
+                  <div>
+                    <p>David Xu</p>
+                    <p class="email-text text-secondary fs-12">10:38 AM (4 hours ago)</p>
+                  </div>
+                </div>
+                <div class="ms-56">
+                  <p class="card-text fs-14 my-3">Hi Teacher, the attached file is my homework of chapter 2. And here comes a question: Why in the following code the height of the <span class="font-mono text-success">div</span> is bigger than the height of the <span class="font-mono text-success">img</span> ? There is a gap below the image, but it doesn’t seems to be a padding/margin. <br> What is the gap or extra space below image?</p>
+                  <a href="#" class="btn btn-light border" download="HW-2-David.zip">HW-2-David.zip</a>
+                </div>
+                <div class="secondary-line my-3 ms-56"></div>
+                <div class="edit-before">
+                  <div class="d-flex align-items-center personal justify-content-between">
+                    <div class="d-flex">
+                      <img src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/week5/andychen.jpeg" alt="andychen" class=" rounded-circle me-3">
+                      <div>
+                        <p>Andy Chen (You)</p>
+                          <p class="email-text text-secondary fs-12">13:24 AM (1 hours ago)</p>
+                      </div>
+                    </div>
+                    <div>
+                      <span class="material-symbols-outlined">grade</span>
+                      <span class="material-symbols-outlined ms-4">edit</span>
+                    </div>
+                  </div>
+                  <div class="ms-56">
+                    <p class="card-text fs-14 my-3">Hi David, by default, an image is rendered inline, like a letter so it sits on the same line that a, b, c and d sit on. There is space below that line for the descenders you find on letters like g, j, p and q. <br><br> You can: <br><br>　• adjust the <span class="font-mono text-success">vertical-align</span> of the image to position it elsewhere (e.g. the <span class="font-mono text-success">middle</span>  ) or <br>　• change the <span class="font-mono text-success">display</span>  so it isn’t inline.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="editor-wrap">
+                <div id="editor" class="editor">Reply an answer…</div>
+              </div>
+            </div>
+          </div>
+          <div class="tab-pane fade" id="list-messages" role="tabpanel" aria-labelledby="list-messages-list">
+            <div class="card">
+              <div class="card-header d-flex justify-content-between align-items-center">
+                <div>
+                  <p class="fs-12">Chapter Assignment 2 / HTML&CSS</p>
+                  <p class="fw-bold">Please check this file for me, thanks!</p>
+                </div>
+                <span class="material-symbols-outlined fw-bold">more_vert</span>
+              </div>
+              <div class="card-body pe-32">
+                <div class="d-flex align-items-center personal">
+                  <img src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/week5/emilywang.jpeg" alt="emilywang" class=" rounded-circle me-3">
+                  <div>
+                    <p>Tony Wei</p>
+                    <p class="email-text text-secondary fs-12">10:38 AM (4 hours ago)</p>
+                  </div>
+                </div>
+                <div class="ms-56">
+                  <p class="card-text fs-14 my-3">Hi Teacher, the attached file is my homework of chapter 2. And here comes a question: Why in the following code the height of the <span class="font-mono text-success">div</span> is bigger than the height of the <span class="font-mono text-success">img</span> ? There is a gap below the image, but it doesn’t seems to be a padding/margin. <br> What is the gap or extra space below image?</p>
+                  <a href="#" class="btn btn-light border" download="HW-2-David.zip">HW-2-David.zip</a>
+                </div>
+                <div class="secondary-line my-3 ms-56"></div>
+                <div class="edit-before">
+                  <div class="d-flex align-items-center personal justify-content-between">
+                    <div class="d-flex">
+                      <img src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/week5/andychen.jpeg" alt="andychen" class=" rounded-circle me-3">
+                      <div>
+                        <p>Andy Chen (You)</p>
+                          <p class="email-text text-secondary fs-12">13:24 AM (1 hours ago)</p>
+                      </div>
+                    </div>
+                    <div>
+                      <span class="material-symbols-outlined">grade</span>
+                      <span class="material-symbols-outlined ms-4">edit</span>
+                    </div>
+                  </div>
+                  <div class="ms-56">
+                    <p class="card-text fs-14 my-3">Hi David, by default, an image is rendered inline, like a letter so it sits on the same line that a, b, c and d sit on. There is space below that line for the descenders you find on letters like g, j, p and q. <br><br> You can: <br><br>　• adjust the <span class="font-mono text-success">vertical-align</span> of the image to position it elsewhere (e.g. the <span class="font-mono text-success">middle</span>  ) or <br>　• change the <span class="font-mono text-success">display</span>  so it isn’t inline.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="editor-wrap">
+                <div id="editor" class="editor">Reply an answer…</div>
+              </div>
+            </div>
+          </div>
+          <div class="tab-pane fade" id="list-settings" role="tabpanel" aria-labelledby="list-settings-list">
+            <div class="card">
+              <div class="card-header d-flex justify-content-between align-items-center">
+                <div>
+                  <p class="fs-12">Chapter Assignment 2 / HTML&CSS</p>
+                  <p class="fw-bold">Please check this file for me, thanks!</p>
+                </div>
+                <span class="material-symbols-outlined fw-bold">more_vert</span>
+              </div>
+              <div class="card-body pe-32">
+                <div class="d-flex align-items-center personal">
+                  <img src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/week5/emilywang.jpeg" alt="emilywang" class=" rounded-circle me-3">
+                  <div>
+                    <p>Christina Lin</p>
+                    <p class="email-text text-secondary fs-12">10:38 AM (4 hours ago)</p>
+                  </div>
+                </div>
+                <div class="ms-56">
+                  <p class="card-text fs-14 my-3">Hi Teacher, the attached file is my homework of chapter 2. And here comes a question: Why in the following code the height of the <span class="font-mono text-success">div</span> is bigger than the height of the <span class="font-mono text-success">img</span> ? There is a gap below the image, but it doesn’t seems to be a padding/margin. <br> What is the gap or extra space below image?</p>
+                  <a href="#" class="btn btn-light border" download="HW-2-David.zip">HW-2-David.zip</a>
+                </div>
+                <div class="secondary-line my-3 ms-56"></div>
+                <div class="edit-before">
+                  <div class="d-flex align-items-center personal justify-content-between">
+                    <div class="d-flex">
+                      <img src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/week5/andychen.jpeg" alt="andychen" class=" rounded-circle me-3">
+                      <div>
+                        <p>Andy Chen (You)</p>
+                          <p class="email-text text-secondary fs-12">13:24 AM (1 hours ago)</p>
+                      </div>
+                    </div>
+                    <div>
+                      <span class="material-symbols-outlined">grade</span>
+                      <span class="material-symbols-outlined ms-4">edit</span>
+                    </div>
+                  </div>
+                  <div class="ms-56">
+                    <p class="card-text fs-14 my-3">Hi David, by default, an image is rendered inline, like a letter so it sits on the same line that a, b, c and d sit on. There is space below that line for the descenders you find on letters like g, j, p and q. <br><br> You can: <br><br>　• adjust the <span class="font-mono text-success">vertical-align</span> of the image to position it elsewhere (e.g. the <span class="font-mono text-success">middle</span>  ) or <br>　• change the <span class="font-mono text-success">display</span>  so it isn’t inline.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="editor-wrap">
+                <div id="editor" class="editor">Reply an answer…</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="d-flex justify-content-between my-4 align-items-center">
+          <div>
+            <a href="#">
+              <span class="material-symbols-outlined me-4">chevron_left</span>
+            </a>
+            <a href="#">
+              <span class="material-symbols-outlined">chevron_right </span>
+            </a>
+          </div>
+          <div>
+            <button type="button" class="btn btn-outline-success py-2 px-32 mark">Mark as read</button>
+            <button type="button" class="btn btn-success py-2 px-32 ms-3 reply">Reply</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
