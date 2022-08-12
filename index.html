@@ -1,10 +1,68 @@
----
-title: index
-layout: ./app/layout.ejs
-engine: ejs
-current: index
----
+<!DOCTYPE html>
+<html lang="en">
 
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>index</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" />
+    <link rel="stylesheet" href="./assets/style/all.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+  </head>
+
+  <body>
+    
+    <div class="wrapper d-flex">
+      
+      <aside class="main-sideBar bg-light d-flex flex-column">
+        <img src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/week5/logo-ANSWER.svg" alt="logo-ANSWER" class="m-4">
+
+        <nav>
+            <ul class="nav nav-pills nav-sidebar flex-column" role="menu" data-accordion="false">
+              <li class="nav-item">
+                <a href="#" class="nav-link mb-2">
+                  <span class="material-icons me-3">dashboard</span>
+                  <span>dashboard</span>
+                </a>
+                <a href="#" class="nav-link mb-2">
+                  <span class="material-icons me-3">question_answer</span>
+                  <span>Question</span>
+                </a>
+                <a href="index.html" class="nav-link active mb-2">
+                  <span class="material-icons me-3">assignment</span>
+                  <span>Assignment</span>
+                </a>
+                <a href="#" class="nav-link mb-2">
+                  <span class="material-icons me-3">video_library</span>
+                  <span>Course</span>
+                </a>
+                <a href="admin.html" class="nav-link mb-2">
+                  <span class="material-icons me-3">supervisor_account</span>
+                  <span>Admin</span>
+                </a>
+                <a href="#" class="nav-link">
+                  <span class="material-icons me-3">settings</span>
+                  <span>Settings</span>
+                </a>
+              </li>
+            </ul>
+        </nav>
+        <div class="mt-auto m-4">
+          <div class="d-flex align-items-center personal">
+            <img src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/week5/andychen.jpeg" alt="andyChen" class=" rounded-circle me-3">
+            <div>
+              <p>Andy Chen</p>
+              <p class="email-text text-secondary fs-14">andy0401@mail.com</p>
+            </div>
+          </div>
+        </div>
+      </aside>
+      
+      <div class="w-100">
+        
 <div class="px-32">
   <div class="d-flex justify-content-between">
     <div class="header-item d-flex m-4 align-items-center ms-0">
@@ -288,3 +346,31 @@ current: index
     </div>
   </div>
 </div>
+
+      </div>
+
+      
+    </div>
+    <script src="./assets/js/vendors.js"></script>
+    <script src="./assets/js/all.js"></script>
+    <script src="https://cdn.ckeditor.com/ckeditor5/29.0.0/classic/ckeditor.js"></script>
+    <script>
+      ClassicEditor
+        .create( document.querySelector( '#editor' ) )
+        .then( editor => {
+        console.log( editor );
+      } )
+        .catch( error => {
+        console.error( error );
+      } );
+      
+      $(".nav-item .nav-link").click(function(){
+        $(".nav-item .nav-link").removeClass("active");
+        $(this).addClass("active");
+      })
+
+      
+    </script>
+  </body>
+
+</html>
