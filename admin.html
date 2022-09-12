@@ -18,7 +18,10 @@
     <div class="wrapper d-flex">
       
       <aside class="main-sideBar bg-light d-flex flex-column">
-        <img src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/week5/logo-ANSWER.svg" alt="logo-ANSWER" class="m-4">
+        <a href="index.html">
+          <img src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/week5/logo-ANSWER.svg" alt="logo-ANSWER" class="m-4">
+        </a>
+        
 
         <nav>
             <ul class="nav nav-pills nav-sidebar flex-column" role="menu" data-accordion="false">
@@ -27,22 +30,32 @@
                   <span class="material-icons me-3">dashboard</span>
                   <span>dashboard</span>
                 </a>
+              </li>
+              <li>
                 <a href="#" class="nav-link mb-2">
                   <span class="material-icons me-3">question_answer</span>
                   <span>Question</span>
                 </a>
+              </li>
+              <li>
                 <a href="index.html" class="nav-link active mb-2">
                   <span class="material-icons me-3">assignment</span>
                   <span>Assignment</span>
                 </a>
+              </li>  
+              <li>
                 <a href="#" class="nav-link mb-2">
                   <span class="material-icons me-3">video_library</span>
                   <span>Course</span>
                 </a>
+              </li>
+              <li>
                 <a href="admin.html" class="nav-link mb-2">
                   <span class="material-icons me-3">supervisor_account</span>
                   <span>Admin</span>
                 </a>
+              </li>
+              <li>
                 <a href="#" class="nav-link">
                   <span class="material-icons me-3">settings</span>
                   <span>Settings</span>
@@ -66,7 +79,7 @@
 <div class="px-32">
   <div class="d-flex justify-content-between">
     <div class="header-item d-flex m-4 align-items-center ms-0">
-      <h4 class="header-text fw-bold mb-0 me-5">Admin</h4>
+      <h1 class="header-text fw-bold mb-0 me-5 fs-4">Admin</h1>
       <a href="#" class="d-flex" data-bs-toggle="modal" data-bs-target="#exampleModal2">
         <span class="material-symbols-outlined text-success">add</span>
         <p class="fw-bold">Add New Admin</p>
@@ -81,7 +94,7 @@
       </a>
     </div>
   </div>
-  <table class="table">
+  <table class="table table-hover">
     <thead>
       <tr>
         <th scope="col">ID</th>
@@ -365,8 +378,8 @@
             <input type="text" class="form-control p-3 border-dark" >
           </div>
           <div class="mb-3">
-            <label for="exampleInputEmail1" class="form-label">Email</label>
-            <input type="email" class="form-control p-3 border-dark" id="exampleInputEmail1">
+            <label for="exampleInputEmail2" class="form-label">Email</label>
+            <input type="email" class="form-control p-3 border-dark" id="exampleInputEmail2">
           </div>
           <div class="my-4 secondary-line"></div>
           <h5 class="fw-bold mb-3">Verification</h5>
@@ -376,7 +389,7 @@
               Unverified
             </label>
           </div>
-          <button type="button" class="btn btn-outline-secondary w-100 mb-4 mt-3 p-3 text-success fw-bold" disabled>Send Verification Mail</button>
+          <button type="button" class="btn btn-outline-secondary w-100 mb-4 mt-3 p-3 text-success fw-bold" readonly>Send Verification Mail</button>
         </form>
         <h5 class="fw-bold mb-3">Access Level</h5>
         <select class="form-select p-3 mb-3 border border-dark w-100" aria-label=".form-select-lg example">
@@ -476,8 +489,8 @@
       
     </div>
     <script src="./assets/js/vendors.js"></script>
-    <script src="./assets/js/all.js"></script>
     <script src="https://cdn.ckeditor.com/ckeditor5/29.0.0/classic/ckeditor.js"></script>
+    <script src="./assets/js/all.js"></script>
     <script>
       ClassicEditor
         .create( document.querySelector( '#editor' ) )
@@ -487,11 +500,9 @@
         .catch( error => {
         console.error( error );
       } );
-      
-      $(".nav-item .nav-link").click(function(){
-        $(".nav-item .nav-link").removeClass("active");
-        $(this).addClass("active");
-      })
+
+
+    
 
       
     </script>
