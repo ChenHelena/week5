@@ -18,7 +18,10 @@
     <div class="wrapper d-flex">
       
       <aside class="main-sideBar bg-light d-flex flex-column">
-        <img src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/week5/logo-ANSWER.svg" alt="logo-ANSWER" class="m-4">
+        <a href="index.html">
+          <img src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/week5/logo-ANSWER.svg" alt="logo-ANSWER" class="m-4">
+        </a>
+        
 
         <nav>
             <ul class="nav nav-pills nav-sidebar flex-column" role="menu" data-accordion="false">
@@ -27,22 +30,32 @@
                   <span class="material-icons me-3">dashboard</span>
                   <span>dashboard</span>
                 </a>
+              </li>
+              <li>
                 <a href="#" class="nav-link mb-2">
                   <span class="material-icons me-3">question_answer</span>
                   <span>Question</span>
                 </a>
+              </li>
+              <li>
                 <a href="index.html" class="nav-link active mb-2">
                   <span class="material-icons me-3">assignment</span>
                   <span>Assignment</span>
                 </a>
+              </li>  
+              <li>
                 <a href="#" class="nav-link mb-2">
                   <span class="material-icons me-3">video_library</span>
                   <span>Course</span>
                 </a>
+              </li>
+              <li>
                 <a href="admin.html" class="nav-link mb-2">
                   <span class="material-icons me-3">supervisor_account</span>
                   <span>Admin</span>
                 </a>
+              </li>
+              <li>
                 <a href="#" class="nav-link">
                   <span class="material-icons me-3">settings</span>
                   <span>Settings</span>
@@ -68,8 +81,8 @@
       
     </div>
     <script src="./assets/js/vendors.js"></script>
-    <script src="./assets/js/all.js"></script>
     <script src="https://cdn.ckeditor.com/ckeditor5/29.0.0/classic/ckeditor.js"></script>
+    <script src="./assets/js/all.js"></script>
     <script>
       ClassicEditor
         .create( document.querySelector( '#editor' ) )
@@ -79,11 +92,9 @@
         .catch( error => {
         console.error( error );
       } );
-      
-      $(".nav-item .nav-link").click(function(){
-        $(".nav-item .nav-link").removeClass("active");
-        $(this).addClass("active");
-      })
+
+
+    
 
       
     </script>

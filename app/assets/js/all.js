@@ -19,4 +19,12 @@ $(".expand_less").click(function(){
   $(".expand_less").hide();
 
 });
-
+$(document).ready(function(){
+  $('.nav-link').each(function(){
+    if($(this).prop('href') == window.location.href){
+      $(this).addClass('active');
+    }else{
+      $(this).removeClass('active');
+    }
+  })
+})

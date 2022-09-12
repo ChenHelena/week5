@@ -8,7 +8,7 @@ current: admin
 <div class="px-32">
   <div class="d-flex justify-content-between">
     <div class="header-item d-flex m-4 align-items-center ms-0">
-      <h4 class="header-text fw-bold mb-0 me-5">Admin</h4>
+      <h1 class="header-text fw-bold mb-0 me-5 fs-4">Admin</h1>
       <a href="#" class="d-flex" data-bs-toggle="modal" data-bs-target="#exampleModal2">
         <span class="material-symbols-outlined text-success">add</span>
         <p class="fw-bold">Add New Admin</p>
@@ -23,7 +23,7 @@ current: admin
       </a>
     </div>
   </div>
-  <table class="table">
+  <table class="table table-hover">
     <thead>
       <tr>
         <th scope="col">ID</th>
@@ -307,8 +307,8 @@ current: admin
             <input type="text" class="form-control p-3 border-dark" >
           </div>
           <div class="mb-3">
-            <label for="exampleInputEmail1" class="form-label">Email</label>
-            <input type="email" class="form-control p-3 border-dark" id="exampleInputEmail1">
+            <label for="exampleInputEmail2" class="form-label">Email</label>
+            <input type="email" class="form-control p-3 border-dark" id="exampleInputEmail2">
           </div>
           <div class="my-4 secondary-line"></div>
           <h5 class="fw-bold mb-3">Verification</h5>
@@ -318,7 +318,7 @@ current: admin
               Unverified
             </label>
           </div>
-          <button type="button" class="btn btn-outline-secondary w-100 mb-4 mt-3 p-3 text-success fw-bold" disabled>Send Verification Mail</button>
+          <button type="button" class="btn btn-outline-secondary w-100 mb-4 mt-3 p-3 text-success fw-bold" readonly>Send Verification Mail</button>
         </form>
         <h5 class="fw-bold mb-3">Access Level</h5>
         <select class="form-select p-3 mb-3 border border-dark w-100" aria-label=".form-select-lg example">

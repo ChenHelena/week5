@@ -8,13 +8,17 @@ current: index
 <div class="px-32">
   <div class="d-flex justify-content-between">
     <div class="header-item d-flex m-4 align-items-center ms-0">
-      <h4 class="header-text fw-bold mb-0">Assignment</h4>
-      <select class="form-select fw-bold ms-5" aria-label="Default select example">
-        <option selected>All Courses</option>
-        <option value="1">One</option>
-        <option value="2">Two</option>
-        <option value="3">Three</option>
-      </select>
+      <h1 class="header-text fw-bold mb-0 fs-4">Assignment</h1>
+      <div class="dropdown">
+        <button class="btn btn-light dropdown-toggle fw-bold ms-5" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+          All Courses
+        </button>
+        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+          <li><a class="dropdown-item" href="#">Action</a></li>
+          <li><a class="dropdown-item" href="#">Another action</a></li>
+          <li><a class="dropdown-item" href="#">Something else here</a></li>
+        </ul>
+      </div>
     </div>
     <div class="header-icon d-flex align-items-center">
       <a href="#">
@@ -26,12 +30,16 @@ current: index
     </div>
   </div>
   <div class="d-flex justify-content-between align-items-center info">
-    <select class="form-select fw-bold" aria-label="Default select example">
-      <option selected>All (4)</option>
-      <option value="1">One</option>
-      <option value="2">Two</option>
-      <option value="3">Three</option>
-    </select>
+    <div class="dropdown">
+      <button class="btn btn-light dropdown-toggle fw-bold" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+        All (4)
+      </button>
+      <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+        <li><a class="dropdown-item" href="#">Action</a></li>
+        <li><a class="dropdown-item" href="#">Another action</a></li>
+        <li><a class="dropdown-item" href="#">Something else here</a></li>
+      </ul>
+    </div>
     <div class="comment">
       <p class="m-0 text-secondary fs-12">2 comments</p>
     </div>
@@ -91,7 +99,9 @@ current: index
                   <p class="fs-12">Chapter Assignment 2 / HTML&CSS</p>
                   <p class="fw-bold">Please check this file for me, thanks!</p>
                 </div>
-                <span class="material-symbols-outlined fw-bold">more_vert</span>
+                <a type="button" class="btn-hover">
+                  <span class="material-symbols-outlined fw-bold">more_vert</span>
+                </a>
               </div>
               <div class="card-body pe-32">
                 <div class="d-flex align-items-center personal">
@@ -116,12 +126,24 @@ current: index
                       </div>
                     </div>
                     <div>
-                      <span class="material-symbols-outlined">grade</span>
-                      <span class="material-symbols-outlined ms-4">edit</span>
+                      <a type="button" class="btn-hover">
+                        <span class="material-symbols-outlined">grade</span>
+                      </a>
+                      <a type="button" class="btn-hover">
+                        <span class="material-symbols-outlined ms-4">edit</span>
+                      </a>
                     </div>
                   </div>
                   <div class="ms-56">
-                    <p class="card-text fs-14 my-3">Hi David, by default, an image is rendered inline, like a letter so it sits on the same line that a, b, c and d sit on. There is space below that line for the descenders you find on letters like g, j, p and q. <br><br> You can: <br><br>　• adjust the <span class="font-mono text-success">vertical-align</span> of the image to position it elsewhere (e.g. the <span class="font-mono text-success">middle</span>  ) or <br>　• change the <span class="font-mono text-success">display</span>  so it isn’t inline.</p>
+                    <p class="card-text fs-14 my-3">Hi David, by default, an image is rendered inline, like a letter so it sits on the same line that a, b, c and d sit on. There is space below that line for the descenders you find on letters like g, j, p and q. <br><br> You can: <br><br>　
+                    <ul>
+                      <li>
+                        adjust the <code class="font-mono text-success">vertical-align</code> of the image to position it elsewhere (e.g. the <code class="font-mono text-success">middle</code>  ) or
+                      </li>
+                      <li>
+                        change the <code class="font-mono text-success">display</code>  so it isn’t inline.
+                      </li>
+                    </ul>
                   </div>
                 </div>
               </div>
@@ -137,7 +159,9 @@ current: index
                   <p class="fs-12">Chapter Assignment 2 / HTML&CSS</p>
                   <p class="fw-bold">Please check this file for me, thanks!</p>
                 </div>
-                <span class="material-symbols-outlined fw-bold">more_vert</span>
+                <a type="button" class="btn-hover">
+                  <span class="material-symbols-outlined fw-bold">more_vert</span>
+                </a>
               </div>
               <div class="card-body pe-32">
                 <div class="d-flex align-items-center personal">
@@ -162,12 +186,24 @@ current: index
                       </div>
                     </div>
                     <div>
-                      <span class="material-symbols-outlined">grade</span>
-                      <span class="material-symbols-outlined ms-4">edit</span>
+                      <a type="button" class="btn-hover">
+                        <span class="material-symbols-outlined">grade</span>
+                      </a>
+                      <a type="button" class="btn-hover">
+                        <span class="material-symbols-outlined ms-4">edit</span>
+                      </a>
                     </div>
                   </div>
                   <div class="ms-56">
-                    <p class="card-text fs-14 my-3">Hi David, by default, an image is rendered inline, like a letter so it sits on the same line that a, b, c and d sit on. There is space below that line for the descenders you find on letters like g, j, p and q. <br><br> You can: <br><br>　• adjust the <span class="font-mono text-success">vertical-align</span> of the image to position it elsewhere (e.g. the <span class="font-mono text-success">middle</span>  ) or <br>　• change the <span class="font-mono text-success">display</span>  so it isn’t inline.</p>
+                    <p class="card-text fs-14 my-3">Hi David, by default, an image is rendered inline, like a letter so it sits on the same line that a, b, c and d sit on. There is space below that line for the descenders you find on letters like g, j, p and q. <br><br> You can: <br><br>　
+                    <ul>
+                      <li>
+                        adjust the <code class="font-mono text-success">vertical-align</code> of the image to position it elsewhere (e.g. the <code class="font-mono text-success">middle</code>  ) or
+                      </li>
+                      <li>
+                        change the <code class="font-mono text-success">display</code>  so it isn’t inline.
+                      </li>
+                    </ul>
                   </div>
                 </div>
               </div>
@@ -183,7 +219,9 @@ current: index
                   <p class="fs-12">Chapter Assignment 2 / HTML&CSS</p>
                   <p class="fw-bold">Please check this file for me, thanks!</p>
                 </div>
-                <span class="material-symbols-outlined fw-bold">more_vert</span>
+                <a type="button" class="btn-hover">
+                  <span class="material-symbols-outlined fw-bold">more_vert</span>
+                </a>
               </div>
               <div class="card-body pe-32">
                 <div class="d-flex align-items-center personal">
@@ -208,12 +246,24 @@ current: index
                       </div>
                     </div>
                     <div>
-                      <span class="material-symbols-outlined">grade</span>
-                      <span class="material-symbols-outlined ms-4">edit</span>
+                      <a type="button" class="btn-hover">
+                        <span class="material-symbols-outlined">grade</span>
+                      </a>
+                      <a type="button" class="btn-hover">
+                        <span class="material-symbols-outlined ms-4">edit</span>
+                      </a>
                     </div>
                   </div>
                   <div class="ms-56">
-                    <p class="card-text fs-14 my-3">Hi David, by default, an image is rendered inline, like a letter so it sits on the same line that a, b, c and d sit on. There is space below that line for the descenders you find on letters like g, j, p and q. <br><br> You can: <br><br>　• adjust the <span class="font-mono text-success">vertical-align</span> of the image to position it elsewhere (e.g. the <span class="font-mono text-success">middle</span>  ) or <br>　• change the <span class="font-mono text-success">display</span>  so it isn’t inline.</p>
+                    <p class="card-text fs-14 my-3">Hi David, by default, an image is rendered inline, like a letter so it sits on the same line that a, b, c and d sit on. There is space below that line for the descenders you find on letters like g, j, p and q. <br><br> You can: <br><br>　
+                    <ul>
+                      <li>
+                        adjust the <code class="font-mono text-success">vertical-align</code> of the image to position it elsewhere (e.g. the <code class="font-mono text-success">middle</code>  ) or
+                      </li>
+                      <li>
+                        change the <code class="font-mono text-success">display</code>  so it isn’t inline.
+                      </li>
+                    </ul>
                   </div>
                 </div>
               </div>
@@ -229,7 +279,9 @@ current: index
                   <p class="fs-12">Chapter Assignment 2 / HTML&CSS</p>
                   <p class="fw-bold">Please check this file for me, thanks!</p>
                 </div>
-                <span class="material-symbols-outlined fw-bold">more_vert</span>
+                <a type="button" class="btn-hover">
+                  <span class="material-symbols-outlined fw-bold">more_vert</span>
+                </a>
               </div>
               <div class="card-body pe-32">
                 <div class="d-flex align-items-center personal">
@@ -254,12 +306,24 @@ current: index
                       </div>
                     </div>
                     <div>
-                      <span class="material-symbols-outlined">grade</span>
-                      <span class="material-symbols-outlined ms-4">edit</span>
+                      <a type="button" class="btn-hover">
+                        <span class="material-symbols-outlined">grade</span>
+                      </a>
+                      <a type="button" class="btn-hover">
+                        <span class="material-symbols-outlined ms-4">edit</span>
+                      </a>
                     </div>
                   </div>
                   <div class="ms-56">
-                    <p class="card-text fs-14 my-3">Hi David, by default, an image is rendered inline, like a letter so it sits on the same line that a, b, c and d sit on. There is space below that line for the descenders you find on letters like g, j, p and q. <br><br> You can: <br><br>　• adjust the <span class="font-mono text-success">vertical-align</span> of the image to position it elsewhere (e.g. the <span class="font-mono text-success">middle</span>  ) or <br>　• change the <span class="font-mono text-success">display</span>  so it isn’t inline.</p>
+                    <p class="card-text fs-14 my-3">Hi David, by default, an image is rendered inline, like a letter so it sits on the same line that a, b, c and d sit on. There is space below that line for the descenders you find on letters like g, j, p and q. <br><br> You can: <br><br>　
+                    <ul>
+                      <li>
+                        adjust the <code class="font-mono text-success">vertical-align</code> of the image to position it elsewhere (e.g. the <code class="font-mono text-success">middle</code>  ) or
+                      </li>
+                      <li>
+                        change the <code class="font-mono text-success">display</code>  so it isn’t inline.
+                      </li>
+                    </ul>
                   </div>
                 </div>
               </div>

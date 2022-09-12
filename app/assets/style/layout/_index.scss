@@ -29,6 +29,7 @@ a {
 
 .main-sideBar {
   width: 296px;
+  height: 100vh;
 }
 
 .nav-pills .nav-link.active,
@@ -101,5 +102,9 @@ a {
 }
 
 a:hover {
+  color: $success;
+}
+
+.btn-hover:hover {
   color: $success;
 }
